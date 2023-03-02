@@ -1,14 +1,14 @@
 import './App.css';
 import FunctionalGreeting from './components/FunctionalGreeting';
-import HooksCounter from './components/HooksCounter';
-import ClassGreeting from './components/ClassGreeting';
+import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProps';
+import StatefulGreeting from './components/StatefulGreeting';
 
 function App() {
   return (
     <div className="App">
-      <FunctionalGreeting name="John" />
-      <ClassGreeting name="Anna" />
-      <HooksCounter name="Mike" />
+      <FunctionalGreeting name="Bob" />
+      <FunctionalGreetingWithProps greeting="Nice to meet you" name="Bob" age="42" />
+      <StatefulGreeting greeting="I'm a Stateful Greeting!" />
     </div>
   );
 }

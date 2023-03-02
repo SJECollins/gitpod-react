@@ -1,11 +1,13 @@
+// const FunctionalGreeting = (props) => {
+//     return (
+//         <h1>Hello {props.name} from React!</h1>
+//     )
+// }
 
-import React from "react";
+// function FunctionalGreeting() {
+//     return <h1>Hello from React!</h1>
+// }
 
-export default function FunctionalGreeting(props) {
-  return (
-    <div className="greeting">
-      <h1>Hello, {props.name}!</h1>
-      <h2>I'm a simple functional component!</h2>
-    </div>
-  );
-}
+const FunctionalGreeting = (props) => <h1>Hello {props.name} from React!</h1>
+
+export default FunctionalGreeting
